@@ -21,7 +21,7 @@ export const PokemonCard: FC<Props> = ({ pokemon }) => {
         isPressable
         variant="bordered"
         css={{ mw: "400px" }}
-        onClick={onclick}>
+        onPress={onclick}>
         <Card.Body css={{ p: 1 }}>
           <Card.Image src={img} width="100%" height={140} alt={name} />
         </Card.Body>
