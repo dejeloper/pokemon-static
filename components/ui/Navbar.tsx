@@ -12,7 +12,7 @@ export const Navbar = () => {
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "start",
-        padding: "0x 20px",
+        padding: "0 20px",
         backgroundColor: theme?.colors.gray100.value,
       }}>
       <Image
@@ -35,7 +35,7 @@ export const Navbar = () => {
       <Spacer css={{ flex: 1 }} />
 
       <NextLink href="/favorites" passHref>
-        <Link css={{ marginRight: "20px" }}>
+        <Link>
           <Text color="white">Favoritos</Text>
         </Link>
       </NextLink>
