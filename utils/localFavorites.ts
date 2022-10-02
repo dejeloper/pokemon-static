@@ -22,11 +22,15 @@ const existInFavorites = (id: number): boolean => {
 
 }
 
+const loadInFavorites = (): number[] => {
 
+  return JSON.parse(localStorage.getItem('favorites') || '[]');
 
+}
 
 const functions = {
   existInFavorites,
+  loadInFavorites,
   toggleFavorite,
 }
 
